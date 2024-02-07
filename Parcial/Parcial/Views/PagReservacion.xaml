@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial.Views.PagReservacion">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="BtnReservar" Text="Reservar" Clicked="Reservar_Clicked"/>
+        <ToolbarItem Name="BtnReservacion" Text="Reservas" Clicked="Reservacion_Clicked"/>
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="2">
+            <Label Text="Bienvenidos" HorizontalOptions="CenterAndExpand" FontSize="Title" FontAttributes="Bold"/>
+            <Label Text="Haga su reserva" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Subtitle"/>
+            <Label Text="Nombre:" FontSize="Medium" TextColor="Black"></Label>
+            <Entry x:Name="nombre"></Entry>
+            <Label Text="Numero de personas:" FontSize="Medium" TextColor="Black"></Label>
+            <Editor x:Name="Pax" />
+            <Label Text="Fecha:" FontSize="Medium" TextColor="Black"/>
+            <DatePicker x:Name="Fecha" Date="2024-01-01" MinimumDate="2024-01-01" MaximumDate="2050-12-31"  />
+            <Label Text="Hora:" FontSize="Medium" TextColor="Black"></Label>
+            <TimePicker x:Name="Hora" Format="HH:mm:ss"></TimePicker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
